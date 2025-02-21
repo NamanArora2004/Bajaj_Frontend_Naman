@@ -8,7 +8,7 @@ export default function Task() {
   const handleSubmit = async () => {
     try {
       const parsedData = JSON.parse(jsonInput);
-      const response = await fetch("https://bajaj-task-backend-yf0j.onrender.com/bfhl", {
+      const response = await fetch("https://bajaj-backend-naman.vercel.app/", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify(parsedData),
